@@ -41,16 +41,25 @@
 
             <p>I'm following this source of knowledge:</p>
             <ul>
-              <li><a href="https://code.makery.ch/library/more-html-css/image-bootstrap/" target="_blank">Images with Bootstrap</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">Responsive Images (Mozilla)</a></li>
-              <li><a href="https://getbootstrap.com/docs/4.1/content/images/#responsive-images" target="_blank">Responsive Images (Bootstrap)</a></li>
+              <li><a href="https://cloudfour.com/thinks/responsive-images-101-definitions/" target="_blank">Responsive Images 101, Part 1: Definitions</a>, by <a href="https://cloudfour.com/is/jason-grigsby/" target="_blank">Jason Grigsby</a>.</li>
+              <li><a href="https://code.makery.ch/library/more-html-css/image-bootstrap/" target="_blank">Images with Bootstrap 4</a>.</li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">Responsive Images (Mozilla)</a>.</li>
+              <li><a href="https://getbootstrap.com/docs/4.1/content/images/#responsive-images" target="_blank">Responsive Images (Bootstrap)</a>.</li>
             </ul>
 
-            <p>And I plan to study as well <a href="https://cloudfour.com/thinks/responsive-images-101-part-8-css-images/">Responsive Images 101, Part 8: CSS Images</a>, by <a href="https://cloudfour.com/is/jason-grigsby/" target="_blank">Jason Grigsby</a>.</p>
+            <p>And I plan to study as well <a href="https://cloudfour.com/thinks/responsive-images-101-part-8-css-images/">Responsive Images 101, Part 8: CSS Images</a>, by <a href="https://cloudfour.com/is/jason-grigsby/" target="_blank">Jason Grigsby</a>, too.</p>
 
             <p>Including the <a href="../../img/kabita-darlami-zQ3nzYSfZxY-unsplash.jpg" target="_blank">original image</a> in the website is the easy part. The tricky part is to display it appropriately. Let's have some examples.</p>
 
+            <p>We attempt to solve the <em>Art Direction Problem</em> by specifying two different images in a <code>picture</code> element. If the screen (actually, the <code>viewport</code>) is narrow enough, you may see how the image displayed below changes.</p>
+
+            <picture>
+              <source media="(max-width: 900px)" srcset="girl-in-landscape.jpg" />
+              <source media="(min-width: 800px)" srcset="landscape-with-girl.jpg" />
+              <img src="landscape-with-girl.jpg" alt="A picture of a girl in a Nepalese landscape." class="mb-4 rounded" />
+            </picture>
             
+            <p>The picture is displayed with two different enhancements. First, we set a margin on both top and bottom as explained in the <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Bootstrap Spacing</a> techniques page. Second, we round the corners by using the <code>rounded</code> class as shown in the <a href="https://getbootstrap.com/docs/4.1/utilities/borders/#border-radius">Borders</a> page.</p>
 
             <p>Next entry in this blog coming soon. Stay tuned!</p>
 
