@@ -1,5 +1,5 @@
-  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
 h2 {
     background-color: #607d8b;
@@ -12,9 +12,10 @@ h2 {
   }
 
 body {
- font-family: 'Work Sans', sans-serif;
+font-family: 'Outfit', sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
- font-family: 'Crimson Text', serif;
+font-family: 'Gloock', serif;
 }
 
