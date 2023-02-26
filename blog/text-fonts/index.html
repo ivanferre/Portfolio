@@ -33,17 +33,21 @@
             <p>February 26, 2023</p>
             <hr>
 
-            <p>In the <a href="../../links/index.html" target="_blank" title="Links">links page</a>, I had very long listings. I thought I could optimize screen usage by splitting the text into two separate columns.</p>
+            <p>There are a number of considerations on choosing the typefonts. Aesthetics, since they give personality to the texts and pages; and technical, because accessibility and time to load must be taken into consideration.</p>
 
-            <p>I will first explain what I did not: to create a table. This would have been an obvious choice, should I had more information to display about each reference. Or a simple way to do it when there would only be a grid of words. But what I wanted to do was to split the lists into separate columns, not only to present them more clearly, but also to have them classified by some criteria.</p>
+            <p>To use a specific font in a page, we must perform two steps:</p>
+            <ol>
+            <li>Import the font from the source. This may be done in turn in two places:
+              <ul>
+                <li>The HTML page, With the <code>link</code> tag, exactly the same way a <code>.css</code> file would be included, from the header or the beginning of the body. However, I prefer to keep the HTML pages only for the content and structure of the document.
+                </li>
+                <li>The CSS file, which looks the best place to me since the style sheet is meant for exactly this: defining the looks of the document. In this case, we must use the <code>@import</code> statement.</li>
+              </ul>
+            </li>
+            <li>Use the font in the appropriate styles for body and headers.</li>
+            </ol>
 
-            <p>And I wanted to keep learning new features, too.</p>
-
-            <p>So I have chosen to display the text in more than one column. This also lets me write <em>lists</em> instead of <em>items</em> separately. Bootstrap's CSS have plenty of classes defined to make this easy. The main trick is to have a container to wrap the rows and columns, and to have a clear idea on how to organize things. It's a very flexible and powerful tool that offers much more than I needed for this simple purpose.</p>
-
-            <p>The Bootstrap Grid System is very well explained in <a href="https://getbootstrap.com/docs/4.1/layout/grid/#auto-layout-columns" title="Grid System" target="_blank">this page</a>. It's based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" title="Basic Concepts of Flexbox" target="_blank">flexbox</a> and is fully responsive. Together with the last link to Mozilla documentation, it also refers to this <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background" title="A Complete Guide to Flexbox" target="_blank">CSS Tricks flexbox Guide</a> that will explain everything you may want to know about flexbox.</p>
-
-            <p>The results as of today are not perfect due to a minor issue that I'm not in the mood of correcting right now. The default values in Bootstrap's CSS define a padding for each column. If the left padding is not stripped off, you will notice a very slight difference on the <em>left margin</em> of the page for the text that are single-column, and the ones multi-column. Right now, I prefer to move on to other text formatting topics.</p>
+            <p><a href="https://fonts.google.com/" title="Google Fonts" target="_blank">Google Fonts</a>, <a href="https://fonts.adobe.com/" title="Adobe Fonts" target="_blank">Adobe Fonts</a>, <a href="https://www.fontsquirrel.com/" title="Font Squirrel" target="_blank">Font Squirrel</a>, and <a href="https://www.dafont.com/" title="Da Font" target="_blank">Da Font</a> are four font repositories to consider.</p>
 
             <p>Next entry in this blog coming soon. Stay tuned!</p>
 
